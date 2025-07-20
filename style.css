@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(144, 200, 238);
+}
+
+.container
+{
+    text-align: center;
+    border: 2px solid black;
+    width: 25vw;
+    height: 70vh;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(234, 232, 220);
+    
+}
+
+.box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    border: 2px solid black;
+    width: 20vw;
+    height: 50vh;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boxes{
+    height:70px;
+    width: 70px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+button{
+    background-color: rgb(56, 198, 56);
+    height: 30px;
+    width: 100px;
+    border-radius: 7px;
+    box-shadow: 0.5px 2px 2px 0.5px;
+}
+
+
+@media (max-width: 765px) {
+    .container {
+        width: 60vw;
+        height: auto;
+    }
+
+    .box {
+        width: 55vw;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .boxes {
+        height: 45px;
+        width: 45px;
+        margin-left: 0;
+    }
+    button{
+        background-color: rgb(56, 198, 56);
+        height: 25px;
+        width: 50px;
+        border-radius: 7px;
+        box-shadow: 0.5px 2px 2px 0.5px;
+        font-size:10px;
+    }
+}
+
+@media (max-width: 496px) {
+    .container {
+        width: 90vw;
+        height: auto;
+    }
+
+    .box {
+        width: 85vw;
+        height: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        margin-left: 0;
+    }
+
+    .boxes {
+        height: 20px;
+        width: 20px;
+        margin-left: 0;
+    }
+
+    button {
+        width: 80px;
+        height: 28px;
+        font-size: 14px;
+    }
+    button{
+        background-color: rgb(56, 198, 56);
+        height: 15px;
+        width: 40px;
+        border-radius: 7px;
+        box-shadow: 0.5px 2px 2px 0.5px;
+        font-size: 5px;
+    }
+}
